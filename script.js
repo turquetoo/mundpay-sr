@@ -3,11 +3,10 @@ console.log('⚙️ Setting up Mundpay One-Click Integration...');
 
 // Function to initialize Mundpay buttons
 function initializeMundpayButtons() {
-  const fornpayButtons = document.querySelectorAll('.fornpay_btn');
-  const fornpayDownsells = document.querySelectorAll('.fornpay_downsell');
+  const fornpayButtons = document.querySelectorAll('.mndpay_btn');
   
-  if (fornpayButtons.length > 0 || fornpayDownsells.length > 0) {
-    console.log('✅ Mundpay buttons found:', fornpayButtons.length, 'primary,', fornpayDownsells.length, 'downsell');
+  if (fornpayButtons.length > 0) {
+    console.log('✅ Mundpay buttons found:', fornpayButtons.length, 'primary');
     
     // The Mundpay script (oneclick.js) will handle the button functionality automatically
     // when it loads, so we just need to ensure the buttons are present
@@ -20,7 +19,7 @@ function initializeMundpayButtons() {
 
 // Check for Mundpay button containers
 function checkForMundpayButtons() {
-  const buttons = document.querySelectorAll('.fornpay_btn, .fornpay_downsell');
+  const buttons = document.querySelectorAll('.mndpay_btn');
   if (buttons.length > 0) {
     console.log('✅ Mundpay buttons container found');
     return true;
@@ -67,7 +66,7 @@ const checkInterval = setInterval(() => {
 if (!document.querySelector('script[src*="oneclick.js"]')) {
   const mundpayScript = document.createElement('script');
   mundpayScript.type = 'text/javascript';
-  mundpayScript.src = 'https://app.mundpay.com/js/oneclick.js';
+  mundpayScript.src = 'https://upsell.mundpay.com/script.js';
   mundpayScript.onload = () => {
     console.log("✅ Mundpay one-click script loaded");
     setTimeout(initializeMundpayButtons, 100);

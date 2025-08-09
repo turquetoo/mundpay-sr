@@ -130,9 +130,9 @@
                         
                         <!-- Payment Button -->
                         <div class="mb-8 relative z-10">
-                            <button id="openModalBtn" class="block w-full bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] hover:from-[#E17A00] hover:to-[#FF9500] text-white font-black py-5 px-6 rounded-xl text-center transition-all duration-200 shadow-lg text-lg tracking-wide transform hover:scale-105 hover:shadow-2xl" tabindex="0">
+                            <a class="block w-full bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] hover:from-[#E17A00] hover:to-[#FF9500] text-white font-black py-5 px-6 rounded-xl text-center transition-all duration-200 shadow-lg text-lg tracking-wide transform hover:scale-105 hover:shadow-2xl mndpay_btn" tabindex="0" href="javascript:void(0)" data-mndpay="01989043-c0c9-722b-a3b9-71659ed57e1a">
                                 🔥 ACTIVATE PREMIUM WARRANTY
-                            </button>
+                            </a>
                         </div>
                     </div>
 
@@ -163,155 +163,9 @@
         </div>
     </main>
 
-    <!-- Modal -->
-    <div id="paymentModal" class="modal-overlay">
-        <div class="modal-content">
-            <div class="modal-handle"></div>
-            
-            <div class="text-center mb-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">
-                    🔥 SECURE PREMIUM WARRANTY
-                </h3>
-            </div>
-
-            <div style="width: auto; max-width: 400px;">
-                <a href="javascript:void(0)" data-fornpay="vqjcmpibos" class="fornpay_btn">YES, I ACCEPT THIS OFFER</a>
-                <a href="javascript:void(0)" data-downsell="null" class="fornpay_downsell">I will decline this offer</a>
-            </div>
-            <style>
-                .fornpay_btn {
-                    background: #3d94f6;
-                    background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
-                    background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
-                    background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
-                    background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
-                    background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    border-radius: 10px;
-                    color: #fff;
-                    font-family: Arial;
-                    font-size: 18px;
-                    font-weight: 100;
-                    padding: 10px 20px;
-                    border: 1px solid #337fed;
-                    text-decoration: none;
-                    display: block;
-                    cursor: pointer;
-                    text-align: center
-                }
-
-                .fornpay_downsell {
-                    color: #004faa;
-                    font-family: Arial;
-                    margin-top: 10px;
-                    font-size: 16px!important;
-                    font-weight: 100;
-                    text-decoration: none;
-                    display: block;
-                    cursor: pointer;
-                    text-align: center
-                }
-            </style>
-            <script src="https://app.mundpay.com/js/oneclick.js"></script>
-        </div>
-    </div>
-
-    <style>
-        .modal-overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 50;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-
-        .modal-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .modal-content {
-            width: 100%;
-            background-color: white;
-            border-radius: 1.5rem 1.5rem 0 0;
-            padding: 1.5rem;
-            max-height: 50vh;
-            overflow-y: auto;
-            transform: translateY(100%);
-            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .modal-overlay.show .modal-content {
-            transform: translateY(0);
-        }
-
-        .modal-handle {
-            width: 3rem;
-            height: 0.25rem;
-            background-color: #d1d5db;
-            border-radius: 9999px;
-            margin: 0 auto 1rem auto;
-        }
-
-        .modal-payment-section {
-            min-height: 1px;
-        }
-
-        @media (min-width: 640px) {
-            .modal-content {
-                max-width: 28rem;
-                border-radius: 1.5rem;
-                margin: 2rem;
-                max-height: 80vh;
-            }
-        }
-    </style>
-
+    <script src="https://app.mundpay.com/js/oneclick.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Modal functionality
-            const modal = document.getElementById('paymentModal');
-            const openModalBtn = document.getElementById('openModalBtn');
-            const modalContent = modal.querySelector('.modal-content');
-
-            function openModal() {
-                modal.classList.add('show');
-                document.body.style.overflow = 'hidden';
-            }
-
-            function closeModal() {
-                modal.classList.remove('show');
-                document.body.style.overflow = '';
-            }
-
-            // Open modal when button is clicked
-            openModalBtn.addEventListener('click', openModal);
-
-            // Close modal when clicking outside the content
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-
-            // Close modal with escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.classList.contains('show')) {
-                    closeModal();
-                }
-            });
-
-            // Prevent modal content clicks from closing the modal
-            modalContent.addEventListener('click', function(e) {
-                e.stopPropagation();
-            });
-
             // FAQ functionality
             const faqButton = document.getElementById('faqButton');
             const faqContent = document.getElementById('faq-content');

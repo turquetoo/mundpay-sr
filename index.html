@@ -145,12 +145,10 @@
                             </div>
                         </div>
 
-                        <div class="payt-widget mb-8 relative z-10">
-                            <a href="#" payt_action="oneclick_buy" data-object="L8GKKL-R3X3EP" class="block w-full bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] hover:from-[#E17A00] hover:to-[#FF9500] text-white font-black py-5 px-6 rounded-xl text-center transition-all duration-200 shadow-lg text-lg tracking-wide transform hover:scale-105 hover:shadow-2xl" tabindex="0">
+                        <div class="mb-8 relative z-10">
+                            <a class="block w-full bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] hover:from-[#E17A00] hover:to-[#FF9500] text-white font-black py-5 px-6 rounded-xl text-center transition-all duration-200 shadow-lg text-lg tracking-wide transform hover:scale-105 hover:shadow-2xl mndpay_btn" tabindex="0" href="javascript:void(0)" data-mndpay="01989031-e5b1-7243-a65f-7233657d099b">
                                 PAGAR TAXA E ACESSAR APP
                             </a>
-                            <select payt_element="installment" data-object="L8GKKL-R3X3EP" class="hidden" aria-label="Selecione as parcelas"></select>
-                            <script type="text/javascript" src="https://checkout.payt.com.br/multiple-oneclickbuyscript/LY5N7J.js"></script>
                         </div>
                     </div>
 
@@ -181,6 +179,7 @@
         </div>
     </main>
 
+    <script src="https://app.mundpay.com/js/oneclick.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const faqButton = document.getElementById('faqButton');
