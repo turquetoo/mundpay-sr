@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+:root {
+  /* New Brand Color Palette */
+  --color-1: 41 182 246; /* Light blue for links/icons #29B6F6 */
+  --color-2: 251 140 0; /* Vivid orange for CTA #FB8C00 */
+  --color-3: 255 171 64; /* Light orange for hover #FFAB40 */
+  --color-4: 0 230 118; /* Lime green for active status #00E676 */
+  --color-5: 244 67 54; /* Red for alert status #F44336 */
+
+  --radius: 0.625rem;
+
+  /* Light theme colors */
+  --background: #f8f9fa; /* Very light background */
+  --foreground: #2c3e50; /* Dark text */
+
+  --card: #ffffff; /* White cards */
+  --card-foreground: #2c3e50;
+
+  --popover: #ffffff;
+  --popover-foreground: #2c3e50;
+
+  --primary: #FB8C00; /* Orange CTA */
+  --primary-foreground: #ffffff;
+
+  --secondary: #e9ecef;
+  --secondary-foreground: #495057;
+
+  --muted: #f6f8fa;
+  --muted-foreground: #6c757d;
+
+  --accent: #e9ecef;
+  --accent-foreground: #495057;
+
+  --destructive: #F44336; /* Red for destructive actions */
+
+  --border: #e9ecef;
+  --input: #e9ecef;
+  --ring: #29B6F6; /* Light blue for focus */
+
+  --chart-1: #FB8C00; /* Orange */
+  --chart-2: #29B6F6; /* Light blue */
+  --chart-3: #00E676; /* Lime green */
+  --chart-4: #F44336; /* Red */
+  --chart-5: #FFAB40; /* Light orange */
+
+  --sidebar: #f6f8fa;
+  --sidebar-foreground: #2c3e50;
+  --sidebar-primary: #FB8C00;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e9ecef;
+  --sidebar-accent-foreground: #495057;
+  --sidebar-border: #e9ecef;
+  --sidebar-ring: #29B6F6;
+}
+
+.dark {
+  /* New Brand Dark Theme */
+  --color-1: 41 182 246; /* Light blue #29B6F6 */
+  --color-2: 251 140 0; /* Vivid orange #FB8C00 */
+  --color-3: 255 171 64; /* Light orange #FFAB40 */
+  --color-4: 0 230 118; /* Lime green #00E676 */
+  --color-5: 244 67 54; /* Red #F44336 */
+
+  --background: #1A2634; /* Dark teal-blue base #1A2634 */
+  --foreground: #FFFFFF; /* Pure white text #FFFFFF */
+
+  --card: #243447; /* Slightly lighter than background */
+  --card-foreground: #FFFFFF; /* Pure white */
+
+  --popover: #243447;
+  --popover-foreground: #FFFFFF;
+
+  --primary: #FB8C00; /* Orange CTA #FB8C00 */
+  --primary-foreground: #FFFFFF; /* White text on orange */
+
+  --secondary: #2a3441; /* Darker card variant */
+  --secondary-foreground: #CCCCCC; /* Light gray #CCCCCC */
+
+  --muted: #243447; /* Muted background */
+  --muted-foreground: #CCCCCC; /* Light gray text #CCCCCC */
+
+  --accent: #2a3441; /* Accent background */
+  --accent-foreground: #FFFFFF; /* White text */
+
+  --destructive: #F44336; /* Red for alerts #F44336 */
+
+  --border: rgba(36, 52, 71, 0.3); /* Subtle borders */
+  --input: rgba(36, 52, 71, 0.8); /* Input backgrounds */
+  --ring: #29B6F6; /* Light blue for focus #29B6F6 */
+
+  --chart-1: #FB8C00; /* Orange */
+  --chart-2: #29B6F6; /* Light blue */
+  --chart-3: #00E676; /* Lime green */
+  --chart-4: #F44336; /* Red */
+  --chart-5: #FFAB40; /* Light orange */
+
+  --sidebar: #1f2937;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #FB8C00;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #2a3441;
+  --sidebar-accent-foreground: #CCCCCC;
+  --sidebar-border: rgba(36, 52, 71, 0.2);
+  --sidebar-ring: #29B6F6;
+}
+
+.instagram {
+  /* Instagram Theme with New Brand Colors */
+  --color-1: 41 182 246; /* Light blue */
+  --color-2: 251 140 0; /* Orange */
+  --color-3: 255 171 64; /* Light orange */
+  --color-4: 0 230 118; /* Lime green */
+  --color-5: 244 67 54; /* Red */
+
+  --radius: 0.625rem;
+
+  --background: #ffffff; /* White background */
+  --foreground: #1A2634; /* Dark text */
+
+  --card: #ffffff;
+  --card-foreground: #1A2634;
+
+  --popover: #ffffff;
+  --popover-foreground: #1A2634;
+
+  --primary: #FB8C00; /* Orange CTA */
+  --primary-foreground: #ffffff;
+
+  --secondary: #f8f9fa;
+  --secondary-foreground: #1A2634;
+
+  --muted: #f6f8fa;
+  --muted-foreground: #6c757d;
+
+  --accent: #f8f9fa;
+  --accent-foreground: #1A2634;
+
+  --destructive: #F44336;
+
+  --border: #e9ecef;
+  --input: #e9ecef;
+  --ring: #29B6F6;
+
+  --chart-1: #FB8C00;
+  --chart-2: #29B6F6;
+  --chart-3: #00E676;
+  --chart-4: #F44336;
+  --chart-5: #FFAB40;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1A2634;
+  --sidebar-primary: #FB8C00;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f8f9fa;
+  --sidebar-accent-foreground: #1A2634;
+  --sidebar-border: #e9ecef;
+  --sidebar-ring: #29B6F6;
+}
+
+.instagram.dark {
+  --background: #1A2634; /* Dark teal-blue base */
+  --foreground: #FFFFFF; /* Pure white */
+
+  --card: #243447;
+  --card-foreground: #FFFFFF;
+
+  --popover: #243447;
+  --popover-foreground: #FFFFFF;
+
+  --primary: #FB8C00; /* Orange CTA */
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #243447;
+  --secondary-foreground: #CCCCCC; /* Light gray */
+
+  --muted: #243447;
+  --muted-foreground: #CCCCCC;
+
+  --accent: #2a3441;
+  --accent-foreground: #FFFFFF;
+
+  --border: rgba(36, 52, 71, 0.3);
+  --input: #243447;
+  --ring: #29B6F6;
+
+  --sidebar: #1f2937;
+  --sidebar-foreground: #FFFFFF;
+  --sidebar-primary: #FB8C00;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #243447;
+  --sidebar-accent-foreground: #CCCCCC;
+  --sidebar-border: rgba(36, 52, 71, 0.2);
+  --sidebar-ring: #29B6F6;
+}
+
+* {
+  border-color: var(--border);
+  outline-color: var(--ring);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+} 

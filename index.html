@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Dossiê do Instagram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'ping': 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+                        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce': 'bounce 1s infinite',
+                    },
+                    keyframes: {
+                        ping: {
+                            '75%, 100%': {
+                                transform: 'scale(2)',
+                                opacity: '0',
+                            },
+                        },
+                        pulse: {
+                            '0%, 100%': {
+                                opacity: '1',
+                            },
+                            '50%': {
+                                opacity: '.5',
+                            },
+                        },
+                        bounce: {
+                            '0%, 100%': {
+                                transform: 'translateY(-25%)',
+                                animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+                            },
+                            '50%': {
+                                transform: 'none',
+                                animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+                            },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+    <main class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+        <div class="bg-[#F44336] text-white text-center py-4 px-4 font-bold text-base relative z-10">
+            NÃO SAIA DESSA PÁGINA, PODE OCASIONAR ERRO NA SUA COMPRA!
+        </div>
+
+        <div class="flex justify-center items-center min-h-screen p-2 relative z-10">
+            <div class="w-full max-w-sm">
+                <div class="bg-gradient-to-br from-gray-800 via-gray-900 to-black rounded-3xl shadow-2xl border border-[#F44336]/30 p-8 relative overflow-hidden mx-auto">
+                    <div class="text-center mb-6 relative z-10">
+                        <h1 class="text-4xl font-black bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent mb-3 leading-tight">
+                            PARABÉNS!
+                        </h1>
+
+                        <p class="text-xl font-semibold text-white mb-6">
+                            Quase acessando app
+                        </p>
+
+                        <div class="bg-gray-700 rounded-full h-3 mb-3 overflow-hidden border border-[#F44336]/30">
+                            <div id="progressBar" class="bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] h-full rounded-full transition-all duration-1000 ease-out shadow-lg" style="width: 50%"></div>
+                        </div>
+                        <p class="text-lg font-bold bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent mb-6">
+                            50%
+                        </p>
+                    </div>
+
+                    <div class="mb-8 relative z-10">
+                        <div class="text-center space-y-6">
+                            <p class="text-gray-200 text-lg font-bold leading-relaxed">
+                                Sua vaga para o app <span class="bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent">Dossiê do Instagram</span> está garantida.
+                            </p>
+
+                            <p class="text-gray-200 text-[14px] font-medium leading-relaxed mb-6">
+                                Para ativar backups automáticos e garantir acesso total e seguro ao aplicativo, é necessário realizar o pagamento único de uma pequena <span class="font-bold bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent">Taxa de Servidor & Firewall</span>.
+                            </p>
+
+                            <div class="space-y-4 text-left my-2">
+                                <div class="flex items-start gap-3">
+                                    <span class="text-[#00E676] text-sm mt-1">✅</span>
+                                    <p class="text-gray-200 text-sm font-medium leading-relaxed">
+                                        Sem ela, seu aplicativo não será ativado.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-[#00E676] text-xs mt-1">✅</span>
+                                    <p class="text-gray-200 text-sm font-medium leading-relaxed">
+                                        Garante a proteção total das suas informações.
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <span class="text-[#00E676] text-xs mt-1">✅</span>
+                                    <p class="text-gray-200 text-sm font-medium leading-relaxed">
+                                        Libera backups automáticos e o funcionamento perfeito do app.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="text-center py-4">
+                                <p class="text-gray-200 text-lg font-bold mb-4">
+                                    Libere agora e aproveite o máximo do seu app!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mb-6 relative">
+                            <div class="absolute inset-0 bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] rounded-3xl blur-lg opacity-30 animate-pulse"></div>
+                            <div class="relative bg-gradient-to-br from-[#FB8C00] to-[#FFAB40] rounded-3xl p-1 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl px-10 py-6 shadow-inner">
+                                    <div class="text-center">
+                                        <div class="text-sm font-bold text-gray-300 mb-2 uppercase tracking-wider">
+                                            OFERTA ESPECIAL
+                                        </div>
+                                        <div class="flex items-center justify-center gap-2 mb-2">
+                                            <span class="text-lg text-gray-400 line-through font-medium">
+                                                R$ 79,90
+                                            </span>
+                                            <div class="bg-[#F44336] text-white text-xs font-bold px-2 py-1 rounded-full animate-bounce">
+                                                -50%
+                                            </div>
+                                        </div>
+                                        <div class="text-4xl font-black bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent mb-2 leading-none">
+                                            R$ 37,90
+                                        </div>
+                                        <div class="text-sm font-semibold text-gray-300 uppercase tracking-wide">
+                                            PAGAMENTO ÚNICO
+                                        </div>
+                                        <div class="flex items-center justify-center gap-1 mt-3">
+                                            <div class="w-2 h-2 bg-[#F44336] rounded-full animate-ping"></div>
+                                            <div class="w-2 h-2 bg-[#FB8C00] rounded-full animate-ping" style="animation-delay: 0.5s"></div>
+                                            <div class="w-2 h-2 bg-[#F44336] rounded-full animate-ping" style="animation-delay: 1s"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-3 -right-3 bg-yellow-400 text-yellow-900 text-xs font-black px-3 py-1 rounded-full shadow-lg animate-pulse border-2 border-yellow-300">
+                                🔥 LIMITADO
+                            </div>
+                        </div>
+
+                        <div class="payt-widget mb-8 relative z-10">
+                            <a href="#" payt_action="oneclick_buy" data-object="L8GKKL-R3X3EP" class="block w-full bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] hover:from-[#E17A00] hover:to-[#FF9500] text-white font-black py-5 px-6 rounded-xl text-center transition-all duration-200 shadow-lg text-lg tracking-wide transform hover:scale-105 hover:shadow-2xl" tabindex="0">
+                                PAGAR TAXA E ACESSAR APP
+                            </a>
+                            <select payt_element="installment" data-object="L8GKKL-R3X3EP" class="hidden" aria-label="Selecione as parcelas"></select>
+                            <script type="text/javascript" src="https://checkout.payt.com.br/multiple-oneclickbuyscript/LY5N7J.js"></script>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-[#F44336]/20 pt-6 relative z-10">
+                        <h3 class="text-xl font-black bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent text-center mb-6">
+                            DÚVIDAS FREQUENTES
+                        </h3>
+
+                        <div class="space-y-4">
+                            <button id="faqButton" class="w-full text-left p-5 bg-gradient-to-r from-gray-700/50 to-gray-800/50 hover:from-gray-600/50 hover:to-gray-700/50 border border-[#F44336]/20 rounded-lg transition-colors duration-200" aria-expanded="false" aria-controls="faq-content">
+                                <div class="flex items-center justify-between">
+                                    <span class="bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent font-bold text-base">
+                                        Porque devo pagar essa taxa?
+                                    </span>
+                                    <span id="faqToggle" class="bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] bg-clip-text text-transparent text-xl font-bold">+</span>
+                                </div>
+                            </button>
+
+                            <div id="faq-content" class="hidden p-5 bg-gradient-to-r from-gray-700/30 to-gray-800/30 rounded-lg border-l-4 border-[#F44336]">
+                                <p class="text-gray-200 text-base font-medium leading-relaxed">
+                                    A taxa é necessária para ativar os servidores de segurança e garantir o acesso completo às funcionalidades do Dossiê do Instagram. Isso inclui backup automático, monitoramento em tempo real e suporte técnico 24/7.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqButton = document.getElementById('faqButton');
+            const faqContent = document.getElementById('faq-content');
+            const faqToggle = document.getElementById('faqToggle');
+
+            faqButton.addEventListener('click', function() {
+                const isExpanded = faqButton.getAttribute('aria-expanded') === 'true';
+                faqButton.setAttribute('aria-expanded', !isExpanded);
+                faqContent.classList.toggle('hidden');
+                faqToggle.textContent = isExpanded ? '+' : '−';
+            });
+
+            faqButton.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    faqButton.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
