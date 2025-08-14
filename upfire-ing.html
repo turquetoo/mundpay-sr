@@ -105,39 +105,13 @@
                             </div>
                         </div>
 
-                        <!-- Timer Section -->
-                        <div class="text-center mb-6 relative">
-                            <div class="absolute inset-0 bg-gradient-to-r from-[#F44336] via-[#F44336] to-[#F44336] rounded-3xl blur-lg opacity-30 animate-pulse"></div>
-                            <div class="relative bg-gradient-to-br from-[#F44336] via-[#F44336] to-[#F44336] rounded-3xl p-1 shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl px-6 py-6 shadow-inner">
-                                    <div class="text-center">
-                                        <div class="text-sm font-bold text-[#F44336] mb-2 uppercase tracking-wider animate-pulse">
-                                            ⏰ OFFER EXPIRES IN
-                                        </div>
-                                        <div id="countdown" class="text-3xl font-black text-white mb-2 leading-none">
-                                            <span id="minutes">01</span>:<span id="seconds">00</span>
-                                        </div>
-                                        <div class="text-sm font-semibold text-gray-300 uppercase tracking-wide mb-3">
-                                            DON'T LOSE YOUR SPOT!
-                                        </div>
-                                        <div class="flex items-center justify-center gap-1">
-                                            <div class="w-2 h-2 bg-[#F44336] rounded-full animate-ping"></div>
-                                            <div class="w-2 h-2 bg-[#FB8C00] rounded-full animate-ping" style="animation-delay: 0.5s"></div>
-                                            <div class="w-2 h-2 bg-[#F44336] rounded-full animate-ping" style="animation-delay: 1s"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="absolute -top-3 -right-3 bg-[#F44336] text-white text-xs font-black px-3 py-1 rounded-full shadow-lg animate-bounce border-2 border-[#F44336]">
-                                ⚡ URGENT
-                            </div>
-                        </div>
+
                     </div>
                     
                     <!-- Payment Button -->
                     <div class="mb-8 relative z-10">
-                        <a class="block w-full bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] hover:from-[#E17A00] hover:to-[#FF9500] text-white font-black py-5 px-6 rounded-xl text-center transition-all duration-200 shadow-lg text-lg tracking-wide transform hover:scale-105 hover:shadow-2xl mndpay_btn" tabindex="0" href="javascript:void(0)" data-mndpay="0198a411-a936-72ed-a5b2-b8cbd6ff1a20">
-                            🔥 CLICK HERE TO ACCESS ALL DATA
+                        <a class="block w-full bg-gradient-to-r from-[#FB8C00] to-[#FFAB40] hover:from-[#E17A00] hover:to-[#FF9500] text-white font-black py-5 px-6 rounded-xl text-center transition-all duration-200 shadow-lg text-lg tracking-wide transform hover:scale-105 hover:shadow-2xl mndpay_btn" tabindex="0" href="javascript:void(0)" data-mndpay="01989031-e5b1-7243-a65f-7233657d099b">
+                            UPGRADE FIREWALL & REVEAL TRUTH
                         </a>
                     </div>
                     
@@ -190,29 +164,7 @@
                 }
             });
 
-            const minutesElement = document.getElementById('minutes');
-            const secondsElement = document.getElementById('seconds');
-            
-            let totalSeconds = 1 * 60;
-            
-            const updateTimer = () => {
-                const minutes = Math.floor(totalSeconds / 60);
-                const seconds = totalSeconds % 60;
-                
-                minutesElement.textContent = minutes.toString().padStart(2, '0');
-                secondsElement.textContent = seconds.toString().padStart(2, '0');
-                
-                if (totalSeconds <= 0) {
-                    clearInterval(timerInterval);
-                    minutesElement.textContent = '00';
-                    secondsElement.textContent = '00';
-                }
-                
-                totalSeconds--;
-            };
-            
-            updateTimer();
-            const timerInterval = setInterval(updateTimer, 1000);
+
         });
     </script>
 </body>
